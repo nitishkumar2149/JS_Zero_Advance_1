@@ -38,3 +38,33 @@
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//                    Memory and its Working 
+/*
+        Two types of memory :-
+        1. Stack    ---used in ---> Primitive dataype   ---when we declaired then we get a ----> Copy of that variable
+        2. Heap    ---used in ---> Non-Primitive datatype   ---when we declaired then we get a ----> Refrance of that variable/object
+
+*/
+
+// let firstName = "Amit";
+
+// let updatedName = firstName;
+
+// updatedName = "Nitish";
+
+// console.log(firstName);
+// console.log(updatedName);
+
+let userOne = {
+    id : 1,
+    name : "amit"
+}
+
+let userTwo = userOne;
+
+userTwo.name = "Nitish";
+
+console.log(userOne.name);
+console.log(userTwo.name);
