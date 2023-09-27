@@ -1,0 +1,3 @@
+for "alert();" -> https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
+
+Original Documentation link for JS -> https://tc39.es/ecma262/#sec-intro
