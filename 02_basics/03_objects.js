@@ -1,6 +1,6 @@
 // singleton -> When we create any object using constractor then singleton object created.
 //           -> Note : when we create/declared object using literal, that is not create singleton object.
-// Object.create
+// Object.create  -> is used to create object using constractor method, also able to create singleton.
 /*
         # Object can be declared by two ways :-
             1. Literal      -> const JsUser = {} is a Litral method.  -> Not able to create singleton.
