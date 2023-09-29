@@ -1,0 +1,2 @@
+ctrl + d => pess multiple times to select multiple same word for re-edit. 
+shift + alt + down_Arrow key -> Used to copy multiple lines of code in just below their line.
