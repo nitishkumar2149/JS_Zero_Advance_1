@@ -1,0 +1,49 @@
+# JS is work/execute on single threaded.
+
+Q_01. Types of Execution Context :-
+        1. Global Execution Context (GEC)
+        2. Functional/Function Execution Context (FEC)
+        3. Eval Execution Context (EEC)  -> It is a property of Global Object.
+
+Q_02. How JS code execute ? 
+Ans - Execute in 2 phase :-
+        1. Memory Creation Phase/ Memory Phase/ Creation Phase -> In this only memory will allocated for variables or those we declare.
+        2. Execution Phase -> In this execution happen.
+               a. Global Execution / Global Environment.
+               b. Local Execution.
+
+Q_03. Steps of Execution for any JS Code. 
+Ans - Steps are :-
+
+        1. Global Execution (after global execution, it allocated in "this")
+        2. Memory Phase (in this first name all variables and give "undefined" / "definition")
+        3. Execution Phase
+                eg:-
+
+-----------------------------------------------------------------
+         CODE :-
+                let val1 = 10
+                let val2 = 5
+                function addnum(num1, num2){
+                    let total = num1 + num2
+                    return total
+                }
+                let result1 = addnum(val1, val2)
+                let result2 = addnum(10, 2)
+-----------------------------------------------------------------
+1st Cycle(Memory Allocation Phase) :-
+
+                        val1 -> undefined
+                        val2 -> undefined
+                        addnum -> definition
+                        result1 -> undefined
+                        result2 -> undefined
+
+----------------------------------------------------------------      
+2nd Cycle(Execution Phase) :-
+
+                        val1 -> 10
+                        val2 -> 5
+                        addnum -> definition
+                        result1 -> undefined
+                        result2 -> undefined
