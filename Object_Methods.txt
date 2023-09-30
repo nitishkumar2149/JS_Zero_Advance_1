@@ -1,0 +1,12 @@
+********************************* Object Methods *********************************
+.filter() method :-
+    -> This method is used to find anything in an array or object.
+    -> It work as true/false or boolean.
+
+.forEach() method :-
+
+.map() method :-
+    -> This method is used to do any changes / logical operations in any array.
+
+.reduce() method :-  
+    -> 

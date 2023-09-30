@@ -1,0 +1,23 @@
+***************************** String  Methods *****************************
+
+01: [.length] ->  return length of an [[String / Array]] also.
+
+02: .toUpperCase() -> return string in Upper letter.
+
+03: .toLowerCase() -> return string in Lower case.
+
+04: .charAt() => .charAt(index_value) -> return character at that index from a string.
+
+05: .indexOf() => .indexOf("string_charcter")/.indexOf('string_charcter') -> return index value of that character.
+
+06: .substring() => .substring(n1, n2) -> return string from n1 to (n2-1) index. In this -ve index is not accepted.
+
+07: .slice() => .slice(n1, n2) -> return string from n1 to n2 index. Aslo take -ve index.
+
+08: .split() => .split("") / .split("", any_Number_like_4_5_._._._not_mandatory) -> return an splited string in an "ARRAY"/ .split("by_using_any_character/string_present_in_string") and remove that character/string also in array.
+
+09: .trim() -> Remove the blank spaces at start and end of string and return them.
+
+10: [.include()] => .include('charcter_string') -> Check the string/character in [[String / Array]] that they are present or not and return boolean value.
+
+11: .replace() => .replace('any_string_value_or_character') -> to replace any thing.

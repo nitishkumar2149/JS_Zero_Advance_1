@@ -1,11 +1,15 @@
-.filter() method :-
-    -> This method is used to find anything in an array or object.
-    -> It work as true/false or boolean.
+********************************* Tips & Tricks *********************************
+1 : .table() => .table([variabl_1, variable_2,...]) -> Used to console multiple varables.
 
-.forEach() method :-
+2: .toString() -> Used to convert number to string.
 
-.map() method :-
-    -> This method is used to do any changes / logical operations in any array.
+3: Number(string_variable_name) -> typeof = "number" BUT when we console that changed value from string to number, it give "NaN" . --->>>> ?????????
 
-.reduce() method :-  
-    -> 
+4. Primitive
+      => 7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+      => For the above data types, their typeof is same as data type EXECEPT "null" -> 'object'.
+
+5. Non primitive
+      => 3 types : Array, Objects, Functions
+      => For all non-primitive data types, Their return type is "object" only Except "function" -> function( Also called as function object)
+      

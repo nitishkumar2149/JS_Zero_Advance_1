@@ -9,6 +9,14 @@ const balance = new Number(100.654955)
 // console.log(balance.toString().includes(10)); // Here .includes() is used to find any similar string value that tey present or not.
 // console.log(balance.toFixed(2));  // Here .toFixed() is used to show how many digit available after decimal place. 
 
+const string_Number = "101asc";
+const string_to_Number = Number(string_Number)   /// Number() -> Convert string to Number.
+// console.log(typeof string_Number)            // o/p -> string 
+// console.log(string_Number)                   // o/p -> 101asc
+// console.log(typeof string_to_Number);        // o/p -> number 
+// console.log( string_to_Number);              // o/p -> NaN     ----> ?????????????
+
+
 const otherNumber = 123.8966
 
 // console.log(otherNumber.toPrecision(4)); // to give precise value in that number of digit that you have asked. *********************
@@ -33,4 +41,4 @@ const hundreds = 1000000
 const min = 10
 const max = 20
 
-console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+// console.log(Math.floor(Math.random() * (max - min + 1)) + min)
