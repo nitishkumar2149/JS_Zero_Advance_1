@@ -35,3 +35,15 @@ const url = "https://nitish.com/nitish%20kumar"
 // console.log(gameName.split('_'));
 let a = "ramshyammoham_ruam_dytamky";
 // console.log(a.split("am"));
+
+// ***********8 Checking concat() method ************8
+
+const string_1 = "Nitish"
+const string_2 = "Kumar"
+const string_3 = "."
+const result_string = string_1.concat(string_2.concat(string_3));  // concat method just combined all the values into a new string and return that new string.
+const result_string_usingSpreadOperator = [...string_1, ...string_2, ...string_3] // spread operator which spread all the character values present in multiple strings and return in a new array.
+// console.log(result_string);
+// console.log(typeof result_string);
+// console.log(result_string_usingSpreadOperator);
+// console.log(typeof result_string_usingSpreadOperator);
