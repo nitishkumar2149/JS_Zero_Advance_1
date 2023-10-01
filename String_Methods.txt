@@ -8,7 +8,7 @@
 
 04: .charAt() => .charAt(index_value) -> return character at that index from a string.
 
-05: .indexOf() => .indexOf("string_charcter")/.indexOf('string_charcter') -> return index value of that character.
+05: [.indexOf()] => .indexOf("string_charcter")/.indexOf('string_charcter') -> return index value of that character.
 
 06: .substring() => .substring(n1, n2) -> return string from n1 to (n2-1) index. In this -ve index is not accepted.
 
@@ -21,3 +21,7 @@
 10: [.include()] => .include('charcter_string') -> Check the string/character in [[String / Array]] that they are present or not and return boolean value.
 
 11: .replace() => .replace('any_string_value_or_character') -> to replace any thing.
+
+12: [.concat()] => .concat(string_name) -> concat methos combine all the string into a single string and return a new string. 
+
+13: [[...string_name_1, ...string_name_2,...string_name_3]] -> spread operator which spread all the character values present in multiple strings and return in a new array.
