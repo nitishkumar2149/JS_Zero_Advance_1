@@ -1,4 +1,65 @@
-********************************* Array Methods *********************************
+******************************** Array Methods *******************************
+
+=> Arrays can be defibe as many ways like below :-
+	1: const arr_Name = [];
+	2: canst arr_Name = arrValue[1,2,"h","jhdvc",null,undefined,[1, [5]]];
+	3. const arr_Name = new Array(1,2,3,"h", "any_thing")
+
+=> In an array object, we can store multiple items of different datatypes in a single variable. eg. -> let multipleElements = [1, 2, 5, 'n', "h", "Nitish", null, undefined, "true", 0, "false", [1, 8, "h", "jhdvc"]];
+
+=> JS arrays are resizable even after declaration.
+
+=> In JS, array value is access by thier index and index start from 0,1,2,3,....
+
+=> In JS, array-copy operation create shallow copies i.e share the same references. ( A shallow copy of an object is a copy whose properties share the same references. ) not deep copy( A deep copy of an object is a copy whose properties do not share the same references. ).
+
+=> .push() method directly push the value as it in present like if they are present in array then they push the whole array like a single value in another array and return an array inside an array like array object.
+
+=> .concat() methos also push all the value in an array but individually in a new array object. 
+
+=> [...arrayName_1, ...arrayName_2, ...arrayName_3] -> also known as spread operator which spread all the values present in multiple arrays but not spread the values present array inside in an array inside an array.
+
+
+          ************************ Array  Methods ************************
+
+Note -> Those methods present inside [  ], means they are used in multiple places like "string", "array", "object" 
+
+
+01: .push() => .push(any_value) -> push method will add that value in an array. .push() methods can  push anything in an array object even array also.
+
+02: .POP() => .pop(nothing_we_need_to_write_here) -> pop method will remove the last value from that array.
+
+03: .unshift() => .unshift(any_value) -> unshift method add the value at '0' index in that array and due to this in backend all the previous value present in that array shifted forward, this maker the "system slow". So, This is "not good approch".
+
+04: .shift() => .shift(nothing_we_need_to_write_here) -> shift method remove the value that present at '0' index.
+
+05: [.includes()] => .includes(any_value) -> use to check that value is present in array or not and return boolean value.
+
+06: [.indexOf()] => .indexOf(any_value_present_in_array) -> return index of that value in that array.
+
+07: .join() -> join method convert the array object into string.
+
+08: [.slice()] => .slice(n1, n2) -> slice method will return value from n1 index to (n2-1) index and it will not affect the original value.
+
+09: .splice => .splice(n1, n2) -> Splice method will return value from (n1 to n2) index and it will also remove those value present in original array from (n1 to n2) index. 
+
+10: [.concat()] => .concat(array_name) -> concat method also push all the value in an array but individually into a new array object. 
+
+11: [[...array_name_1, ...array_name_2,...array_name_3]] -> spread operator which spread all the values present in multiple arrays but not spread the values present array inside in an array inside an array.
+
+12: .flat() => .flat(depth) method spread all values which is not done by spread operator. Here "depth" -> means how many penitration i.e array inside array inside array need to be done.
+
+13: Array.isArray() => Array.isArray("value") -> Array.isArray("value") method will check that the "value" is present in an array or not and return boolean value.
+
+14: Array.from() => Array.from("value") -> Array.from("value") method, convert that value into an array.
+
+15: Array.of() => Array.of(value1, value2, value3, .....etc.) -> Array.of(values) method store and return all values into a new array. Here 'values' -> A set of elements which may be a variables_value, arrays_value, obaject_value...etc.  
+
+
+
+------------------------------------
+
+
 .filter() method :-
     -> This method is used to find anything in an array or object.
     -> It work as true/false or boolean.
