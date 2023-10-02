@@ -54,10 +54,10 @@ function addone(num){
 }
 // addone(6);
 
-//------------------------- HOISTING (When we store any function value into a variable.) -----------------------------
+// ------------------------- HOISTING (Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution.) -----------------------------
 
-// console.log(addTwo(5))        // This will give ERROR due to Hoisting because addTwo()/addTwo variable is not defined before function call
-const addTwo = function(num){
+// console.log(addTwo(5))         //  This will give ERROR due to Hoisting because addTwo()/addTwo variable is not defined before function call
+const addTwo = function(num){     //  function declaration  
     return num + 2
 }
-console.log(addTwo(5))    // This will Execute.
+// console.log(addTwo(5))         //  function call/execute function. This will Executed sucessfully.
