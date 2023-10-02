@@ -48,7 +48,7 @@ if (true) {
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
-// console.log(addone(1)) // Line 51 and 55 both able to execute because here function return value is not store at any variable.
+// console.log(addone(1)) // Line 51 and 55 both able to execute but not print anywhere because here function return value is not store at any variable.
 function addone(num){
     return num + 1
 }
@@ -56,8 +56,8 @@ function addone(num){
 
 //------------------------- HOISTING (When we store any function value into a variable.) -----------------------------
 
-// console.log(addTwo(5))        // This will give ERROR due to Hoisting.
+// console.log(addTwo(5))        // This will give ERROR due to Hoisting because addTwo()/addTwo variable is not defined before function call
 const addTwo = function(num){
     return num + 2
 }
-// console.log(addTwo(5))    // This will Execute.
+console.log(addTwo(5))    // This will Execute.
