@@ -10,6 +10,12 @@
             => Nullish Coalescing Operator (??): Work only on "null" and "undefined".
             => Terniary Operator
                     condition ? true : false
+            
+            => To compare Empty Array :-
+                    arr_Name.length === 0  -> Check this inside if() block or check in any condition block.
+
+            => To compare Empty Object :-
+                    Object.keys(object_Name).length === 0   ->  Check this inside if() block or check in any condition block.
  */
 
 const userEmail = []
