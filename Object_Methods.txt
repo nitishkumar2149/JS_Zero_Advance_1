@@ -1,4 +1,66 @@
-********************************* Object Methods *********************************
+********************************* Object Methods ********************************
+
+01:  singleton -> When we create any object using constractor then singleton object created.
+           -> Note : when we create/declared object using literal, that is not create singleton object.
+
+02:  Object.create  -> is used to create object using constractor method, also able to create singleton.
+
+03:  Object can be declared by two ways :-
+     1. Literal  -> const JsUser = {} is a Litral method.  -> Not able to create singleton.
+     2. Constractor  -> Object.create is a constractor method. -> Able to  create singleton. 
+
+04:  '.' method => object_name.Key_Name -> dot notation methos to access value from an object and always try this method.
+
+05:  [] square bracket method => object_name["Key_Name"] -> also use square bracket in double cottation as a string is used to access the value of an object.
+
+06:  const mySym = Symbol("Key_Value")  ///***  Here we defining a symbol and passing some value. We can also access any (key : "value") pair as Symbol inside an obaject like this :-
+
+-------------------- Try to use Symbol() ----------------------
+
+const my_key_name = Symbol("Key_value");	// here we using -> Symbol() function/method
+
+
+const object_name = {
+    [my_key_name] : "value",
+    my_id : "one",
+}  
+
+console.log(object_name.my_key_name);            // undefined because my_key_name inside object is not found.
+console.log(object_name[my_key_name]);           // value
+console.log(my_key_name);                        // Symbol(Key_value)
+
+console.log(typeof object_name.my_id);           // string
+console.log(typeof [my_key_name]);               // object
+console.log(typeof object_name[my_key_name]);    // string
+console.log(typeof my_key_name);                 // symbol 
+
+---------------------------------------------------------------
+
+07: Object.freeze() => Object.freeze(any_object_name) -> to stop the permission to do any changes inside that object for any key-value pair.
+
+08: Object.assign() => const obj3 = Object.assign({}, obj1, obj2, obj4) -> Object.assign() is a static method in which all the elements/properties of source object get into an emtyp->{} object / target object and  return the taget object. 
+
+09: ... i.e spread operator (BEST Method) => obj_3 = {...obj1, ...obj2, ...obj4} ->  this is most convient and most recent method to combine a lot of object into a target object.
+
+10: Object.keys() => Object.keys(object_name) -> This method return all keys of an object in a new array.
+
+11: Object.values() => Object.values(object_name) -> This method return all values of an object in a new array.
+
+12: Object.entries() => Object.entries(object_name) -> This method store all keys and values of an object into an individual array and then return also all these arrays  into a big array / array object.
+
+13: 
+------------------------ Modern Technique to access OBJECT -----------------------
+To access any key or values from an object by using MODERN TECHNIQUE are below : -
+
+const object_name = {
+    my_key_name : "value",
+    my_id : "one",
+} 
+
+const { my_key_name : any_name } = object_name
+console.log(any_name);   // value
+---------------------------------------------------------------------------------
+
 .filter() method :-
     -> This method is used to find anything in an array or object.
     -> It work as true/false or boolean.
