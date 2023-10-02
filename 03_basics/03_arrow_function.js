@@ -1,5 +1,5 @@
 /**
-    => "this" keywoard refer current context means able to access the value of a variable/keys that present inside thier scope.
+    => "this" keywoard refer current context means able to access the value of a keys/values that present inside thier scope like inside object/array.
     => In browser, the global object is "window object". -> When we try to access : console.log(this);
     => In node like VS Code, the globle object is empty i.e {} -> when we try to access : console.log(this);
  */
@@ -9,7 +9,7 @@ const user = {
     price: 999,
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
-        console.log(this);     // access block level context.
+        // console.log(this);     // access block level context.
     }
 }
 
@@ -21,21 +21,22 @@ const user = {
 
 function chai_1(){                         // ******* Function Definig 1st Type *******
     let username = "Nitish"
-    console.log(this.username);  // not able to access username using this keywoard.
-    // console.log(this)
+    // console.log(this.username);  // not able to access username using this keywoard because "this" keyword is able to access either current contect of object or access global context.
+    // console.log(username); 
+    // console.log(this);
 }
-// chai_1()
+chai_1()
 
 const chai_2 = function () {               // ******* Function Definig 2nd Type *******
     let username = "Nitish"
-    console.log(this.username);
+    // console.log(this.username);
     // console.log(this)
 }
 // chai_2()
 
 const chai_3 =  () => {                      // ******* Function Definig 3rd Type *******
     let username = "Nitish"
-    console.log(this.username);
+    // console.log(this.username);
     // console.log(this)                    // empty i.e -> {}
 }
 // chai_3()
