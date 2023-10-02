@@ -11,9 +11,9 @@ function sayMyName(){           // Definiation
 //sayMyName                     // Reference
 // sayMyName()                     // Execution
 
-// function addTwoNumbers(number1, number2){     // here -> number1, number2 are  "parameters" and in JS, it does not required it's type definiation.
-//     let a = console.log(number1 + number2);
-// }
+function addTwoNumbers(number1, number2){     // here -> number1, number2 are  "parameters" and in JS, it does not required it's type definiation.
+    let a = console.log(number1 + number2);
+}
 // addTwoNumbers(1,"2"); //  Here 1, "2" are arguments. // here 1 and 2 both get taken into as a string. This is done by JS automatically.
 
 
@@ -50,11 +50,11 @@ function loginUserMessage(username = "Default_Name"){
 // console.log(loginUserMessage("Nitish"))
 
 
-function calculateCartPrice(val1, val2, ...num1){  // here val1 taken 200, val2 taken 400 and rest all amount return by ...num1 in a bundal of an array formate.
+function calculateCartPrice(_val1, _val2, ...num1){  // here val1 taken 200, val2 taken 400 and rest all amount return by ...num1 in a bundal of an array formate.
     return num1                                     // here "..." -> also called as rest operator, it return all values in bundal of an array.
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+// console.log(calculateCartPrice(200, 400, 500, 2000, 600))
 
 const user = {
     username: "Nitish",
@@ -78,5 +78,5 @@ function returnSecondValue(getArray){
     return getArray[1]
 }
 
-console.log(returnSecondValue(myNewArray));
+// console.log(returnSecondValue(myNewArray));
 // console.log(returnSecondValue([200, 400, 500, 1000])); // ****************** !!!!  Here we are directly passing array inside a function at the time of function call.
