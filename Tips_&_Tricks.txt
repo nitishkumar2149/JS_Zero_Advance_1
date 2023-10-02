@@ -57,7 +57,28 @@ console.log(addTwo(5))           //  function call/execute function. This will E
     =>  Define IIFE -> IIFE stands for Immediately Invoked Function Expressions which is used to prevent the pollution from global scope variables.
     => ()();   -> Here, inside 1st (), we use it for decleration and 2nd () is used for execuation.
 
-09: 
+09: Truthy/Falsy Value :-
+    
+            **********************  falsy values  ******************
+
+               false, 0, -0, BigInt 0n, "", null, undefined, NaN
+
+            **********************  truthy values  *****************
+
+                   "0", 'false', " ", [], {}, function(){}
+
+10: Operators :-
+         
+            => Nullish Coalescing Operator (??): Work only on "null" and "undefined".
+            => Terniary Operator
+                    condition ? true : false
+            
+11: To compare Empty Array :-
+            -> arr_Name.length === 0  -> Check this inside if() block or check in any condition block.
+
+12: To compare Empty Object :-
+            -> Object.keys(object_Name).length === 0   ->  Check this inside if() block or check in any condition block.
+
 
 
 
