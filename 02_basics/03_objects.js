@@ -10,7 +10,6 @@
 
 const mySym = Symbol("Key_Value")  ///***  Here we defining a symbol and passing some value.
 
-
 const JsUser = {
     name: "Nitish",
     "full name": "Nitish Kumar",
@@ -22,8 +21,8 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)   /// . -> dot notation methos to access value from an object and always try this method.
-// console.log(JsUser["email"])  ///  [" "] -> also use square bracket in double cottation as a string is used to access the value of an object.
+// console.log(JsUser.email)   /// object_name.Key_Name -> dot notation methos to access value from an object and always try this method.
+// console.log(JsUser["email"])  ///  object_name["Key_Name"] -> also use square bracket in double cottation as a string is used to access the value of an object.
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 // console.log(mySym)
@@ -31,8 +30,25 @@ const JsUser = {
 // console.log(typeof [mySym])
 // console.log(typeof mySym)
 
+const my_key_name = Symbol("Key_value");	// here we using -> Symbol() function/method
+
+const object_name = {
+    [my_key_name] : "value",
+    my_id : "one",
+}  
+
+// console.log(object_name.my_key_name);            // undefined because my_key_name inside object is not found.
+// console.log(object_name[my_key_name]);           // value
+// console.log(my_key_name);                        // Symbol(Key_value)
+
+// console.log(typeof object_name.my_id);           // string
+// console.log(typeof [my_key_name]);               // object
+// console.log(typeof object_name[my_key_name]);    // string
+// console.log(typeof my_key_name);                 // symbol
+
+
 JsUser.email = "test@chatgpt.com"
-// Object.freeze(JsUser)    ///////////// .freeze(pass_here_object_name) to freeze to edit any value.
+// Object.freeze(JsUser)    ///////////// .freeze(pass_here_object_name)  -> to stop the permission to do any changes inside that object for any key-value pair.
 JsUser.email = "hitesh@microsoft.com"
 // console.log(JsUser);
 
@@ -47,5 +63,5 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+// console.log(JsUser.greeting());
+// console.log(JsUser.greetingTwo());
