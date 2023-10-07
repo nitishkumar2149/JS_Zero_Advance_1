@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    <h3>Name of ECE Students</h3>
+    <ul class="name">
+        <li>Nitish</li>
+    </ul>
+</body>
+<script>
+
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(3)")
+    // secondLang.innerHTML = "Mojo_Lang"  // traversing of tree is occuring that's why it is not good approch.
+    const newli = document.createElement('li') // traversing of tree is not occuring that's why it is good approch.
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+
+
+// Code Testing For Create, Edit and Remove method for name :- 
+
+// Create :-
+function studentsECE(studentsName){
+    const nameECE = document.createElement('li')
+    nameECE.appendChild(document.createTextNode(studentsName))
+    document.querySelector('.name').appendChild(nameECE)
+}
+
+studentsECE('Amit')
+studentsECE('Sumit')
+studentsECE('Ramesh')
+
+// Edit / Replace :-
+const secondName = document.querySelector('.name').querySelector("li:nth-child(2)")
+const newName = document.createElement('li')
+newName.textContent = "Rahul"
+secondName.replaceWith(newName)
+
+// Remove / Delete :-
+const deleteName = document.querySelector('.name').querySelector("li:nth-child(2)")
+deleteName.remove();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
