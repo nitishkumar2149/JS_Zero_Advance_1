@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')   // creating a "div" tag and we can create any tag like this.
+    console.log(div);                           // console kar rhe hai "div" tag ko
+    div.className = "main"                      // defining class to that div tag
+    div.id = Math.round(Math.random() * 10 + 1) // assing id to that div tag which is rendum id
+    div.setAttribute("title", "generated title")// here we are defining other attributes using "setAttribute()" method using => ("key", "value") pair.  
+    div.style.backgroundColor = "green"         // here we add styling to that div tag like color.
+    div.style.padding = "12px"                  // here we add styling to that div tag like padding.
+
+    // div.innerText = "Chai aur code"          // 1st method to define/assuign text to that div tag.
+    const addText = document.createTextNode("Chai aur code")  // 2nd method to define/assuign text to that div tag in which jere we first creating text using "document.createTextNode("value/text")" method and store in a variable like "addText".
+    div.appendChild(addText)                    // adding that created value/text into that div tag using ".appendChild(addText)" meyhod.
+
+    document.body.appendChild(div)              // print that vale/text on browser screen using "document.body.appenChild()" method.
+</script>
+</html>
