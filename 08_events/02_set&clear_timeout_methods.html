@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set & Clear Time Out Methods</title>
+</head>
+<body>
+    <h2>setTimeout() & clearTimeout()</h2><hr>
+
+    <h3 id="timeOut">Time Out</h3>
+    <button id="stop">Stop</button>
+
+    <script>
+
+    const check = function() {
+        console.log("Checking setTimeout Method");
+    }
+    const timeCheck = setTimeout(check, 3000);
+
+   // clearTimeout(timeCheck)
+
+    ///  setTimeout() :-
+    const changeText = function(){
+        document.querySelector('h3').innerHTML = "Time Out Method is Working"
+    }
+     const changeTextTimeout = setTimeout(changeText, 2000);
+
+    ///  clearTimeout() :-
+   
+        document.getElementById('stop').addEventListener('click', function(){
+            clearTimeout();
+            console.log("clearTimeout Method is Working.")
+        })
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+
+    
+    
+</body>
+</html>
