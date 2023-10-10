@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set & Clear Time Out Methods</title>
+</head>
+<body>
+    <h2>setInterval() & clearInterval()</h2><hr>
+
+    <h3 id="timeOut">Time Out</h3>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+
+        // setInterval() :-
+
+        // in the below code, we have interlinked  two button i. "strart and stop".
+
+        const startFn = function(name){
+            console.log("My name is", name, Date.now())
+        }
+
+            document.getElementById('start').addEventListener('click', function(){
+            const startInt = setInterval(startFn, 2000, "Nitish Kumar.");
+
+            document.querySelector('#stop').addEventListener('click', function(){
+            clearInterval(startInt);
+        })
+        })
+
+        //const startInt = setInterval(startFn, 2000, "Nitish Kumar.");
+
+        // clearInterval() :-
+
+        // document.querySelector('#stop').addEventListener('click', function(){
+        //     clearInterval(fff);
+        // })
+
+
+    </script>
+
+    
+    
+</body>
+</html>
