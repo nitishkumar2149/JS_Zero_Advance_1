@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../09_advance_js/style.css">
+    <title>Document</title>
+</head>
+<body id="body">
+
+### Status of Ajax request using old method/xml request also known as Ajax request :-<br>
+
+0	UNSENT	Client has been created. open() not called yet.<br>
+1	OPENED	open() has been called.<br>
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.<br>
+3	LOADING	Downloading; responseText holds partial data.<br>
+4	DONE	The operation is complete.<br>
+<br>
+    <button class="counting">My Details</button>
+</body>
+<script>
+
+    // const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+
+    // const xhr = new XMLHttpRequest();
+    // xhr.open('GET', requestUrl)
+
+    // // console.log(xhr.readyState); // it will print only 1st i.e 1 
+
+    // xhr.onreadystatechange = function(){   // here all other ready state will print due to function is repeatedly executed till ready state reach to 4. 
+    //     // console.log(xhr.readyState);      
+    //     if (xhr.readyState === 4) {
+
+    //         // console.log(responseText)
+    //     //    const data = this.responseText;  // here "this" refere to current context. Or we can say to access the current context of an object, we need "this" keyword.
+    //     //    console.log(data);
+    //     //    console.log(typeof data);
+
+    //         const data = JSON.parse(this.responseText) // here we converting JASON data froim "string" to "object" using JASON.parse() method.
+    //         // console.log(typeof data);
+    //         const followerCount = data.followers;
+    //         // console.log(followerCount);
+    //         const img = data.avatar_url;
+    //         // console.log(img);
+    //     }
+    // }
+    // xhr.send();
+
+
+
+    //----------------------------------------------------------------------------
+
+const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+
+const xhr = new XMLHttpRequest();
+xhr.open('GET', requestUrl)
+xhr.onreadystatechange = function(){  
+    if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText) 
+
+        const followerCount = data.followers;
+        // console.log(followerCount);
+        const img = data.avatar_url;
+        // console.log(img);
+
+         document.querySelector('.counting').addEventListener('click', function(){
+            console.log(followerCount);
+            console.log(img);
+        })
+    }
+}
+xhr.send();
+
+</script>
+</html>
