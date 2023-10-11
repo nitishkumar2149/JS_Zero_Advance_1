@@ -1,5 +1,20 @@
 // ES6  => all js that we are currently using is after ES6. 
 //  ******************* Modern Technique ******************
+/* 
+
+Basic Structure of class :-
+============================
+class className{
+    constructor(parameter_1, parameter_2, parameter_3){
+        this.parameter_1 = parameter_1
+        this.parameter_2 = parameter_2 
+        this.parameter_3 = parameter_3
+    }
+}
+// here we can take any number of parameters as required.
+
+*/
+
 class User {
     constructor(username, email, password){
         this.username = username;
