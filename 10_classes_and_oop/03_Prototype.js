@@ -42,14 +42,14 @@ const Teacher = {
     makeVideo: true
 }
 
-Teacher.__proto__ = User
+Teacher.__proto__ = User  // Teacher => child object and User => Parent Object. 
 // console.log(Teacher.makeVideo);
 // console.log(Teacher.name);  // Yes, we can access the key and values of User Object inside Teacher Object.
 // console.log(Teacher.email);
 // console.log(User.email);
 // console.log(User.makeVideo); // we cann't access properties of Teacher inside User object here.
 
-// User.__proto__ = Teacher // we cann't do this because Teacher object already inherit the properties from User Object. 
+// User.__proto__ = Teacher // we cann't do this because Teacher object already inherit the properties from User Object but if I comment the above code i.e  "Teacher.__proto__ = User"  then we can define this code and accessable also.
 // console.log(User.makeVideo); // ERROR due to above code/ Cycling  inhertance of object.
 
 
